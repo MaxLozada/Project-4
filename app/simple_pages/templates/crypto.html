@@ -31,7 +31,7 @@
 
 #customers td, #customers th {
   border-top: 1px solid #ddd;
-  padding: 8px;
+  padding: 16px;
 }
 
 #customers tr:nth-child(even){background-color: white;}
@@ -39,11 +39,36 @@
 #customers tr:hover {background-color: #99cfff;}
 
 #customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: left;
   background-color: white;
   color: #333333;
+}
+
+#customers th:last-child,
+#customers td:last-child {
+    text-align: right;
+}
+
+#customers th:nth-last-child(2),
+#customers td:nth-last-child(2) {
+    text-align: center;
+}
+
+#customers th:nth-last-child(3),
+#customers td:nth-last-child(3) {
+    text-align: center;
+}
+
+#customers th:nth-last-child(4),
+#customers td:nth-last-child(4){
+    text-align: center;
+}
+
+#customers th:nth-last-child(5),
+#customers td:nth-last-child(5){
+    text-align: right;
 }
 </style>
 {% endblock %}
