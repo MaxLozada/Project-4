@@ -16,6 +16,9 @@ This project builds upon the previous but adds a Crypto Dashboard that presents 
 the page to the CoinMarketCap home page to show that it works. An admin can edit the map like from the previous projects
 but in this project can edit what cryptos are shown on the Home page.
 
+* [Link to CoinMarketCap](https://coinmarketcap.com/) This link is for the use to compare the prices. Although my prices
+are a little off due time endpoint time differences it's close enough. 
+
 ## Running Locally
 
 1. To Build with docker compose:
