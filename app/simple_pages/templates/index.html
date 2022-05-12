@@ -1,26 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="row">
-        <article class="col-8 lh-lg fs-5">
-
-            <h1>Home Page</h1>
+    <div>
+    <h1>Home Page</h1>
+        <article id="article" class="col-8 lh-lg fs-5">
             <body>
-            {% if current_user.is_authenticated == false %}
-            <aside class="col-4">
-                <h2>Login</h2>
-                <form action="{{ url_for('auth.login') }}" method=post>
-                    <dl>
-                        {{ form.csrf_token }}
-                        {{ render_field(form.email) }}
-                        {{ render_field(form.password) }}
-                    </dl>
-                    <p><input type=submit value=Login>
-                </form>
-            </aside>
-        {% endif %}
-        </article>
-
-        <article class="col-8 lh-lg fs-5">
             <table id="customers">
                 <tr>
                     {% for header in headings %}
@@ -39,8 +22,35 @@
             </body>
 
         </article>
+        <div>
+        {% if current_user.is_authenticated == false %}
+                <aside id="aside" class="col-4">
+                    <h2>Login</h2>
+                    <form action="{{ url_for('auth.login') }}" method=post>
+                        <dl>
+                            {{ form.csrf_token }}
+                            {{ render_field(form.email) }}
+                            {{ render_field(form.password) }}
+                        </dl>
+                        <p><input type=submit value=Login>
+                    </form>
+                </aside>
+
+            {% endif %}
+        </div>
     </div>
     <style>
+
+
+#article {
+    float: left;
+}
+
+#aside {
+    float: right;
+    padding-left: 24px;
+}
+
 #customers {
   border-collapse: collapse;
   width: 100%;
