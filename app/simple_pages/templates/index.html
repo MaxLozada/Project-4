@@ -5,6 +5,22 @@
 
             <h1>Home Page</h1>
             <body>
+            {% if current_user.is_authenticated == false %}
+            <aside class="col-4">
+                <h2>Login</h2>
+                <form action="{{ url_for('auth.login') }}" method=post>
+                    <dl>
+                        {{ form.csrf_token }}
+                        {{ render_field(form.email) }}
+                        {{ render_field(form.password) }}
+                    </dl>
+                    <p><input type=submit value=Login>
+                </form>
+            </aside>
+        {% endif %}
+        </article>
+
+        <article class="col-8 lh-lg fs-5">
             <table id="customers">
                 <tr>
                     {% for header in headings %}
@@ -46,22 +62,18 @@
   background-color: white;
   color: #333333;
 }
-</style>
-        </article>
-        {% if current_user.is_authenticated == false %}
-            <aside class="col-4">
-                <h2>Login</h2>
-                <form action="{{ url_for('auth.login') }}" method=post>
-                    <dl>
-                        {{ form.csrf_token }}
-                        {{ render_field(form.email) }}
-                        {{ render_field(form.password) }}
-                    </dl>
-                    <p><input type=submit value=Login>
-                </form>
-            </aside>
-        {% endif %}
 
-    </div>
+#customers th:last-child,
+#customers td:last-child {
+    text-align: right;
+}
+
+#customers th:nth-last-child(2),
+#customers td:nth-last-child(2) {
+    text-align: center;
+}
+
+</style>
+
 {% endblock %}
 </article>
