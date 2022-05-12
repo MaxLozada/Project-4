@@ -17,7 +17,7 @@ the page to the CoinMarketCap home page to show that it works. An admin can edit
 but in this project can edit what cryptos are shown on the Home page.
 
 * [Link to CoinMarketCap](https://coinmarketcap.com/) This link is for the use to compare the prices. Although my prices
-are a little off due time endpoint time differences it's close enough. 
+are a little off due to the endpoint being different it should be close enough. 
 
 ## Running Locally
 
