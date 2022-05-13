@@ -6,7 +6,7 @@ def test_request_locations(client):
     response = client.get("/")
     assert response.status_code == 200
     assert b'href="/locations/map"' in response.data
-    assert b'href="/locations_datatables/"' in response.data
+    assert b'href="/locations_datatables"' in response.data
 
 
 def test_request_locations_1(client):
@@ -14,7 +14,7 @@ def test_request_locations_1(client):
     response = client.get("/locations_datatables/")
     assert response.status_code == 200
     assert 302 == 200
-    assert b"/locations_datatables" in response.data
+    assert b"locations_datatables" in response.data
 
 
 def test_request_locations_map(client):
