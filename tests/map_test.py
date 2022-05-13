@@ -8,18 +8,11 @@ def test_request_locations(client):
     assert b"locations" in response.data
 
 
-def test_request_locations_upload(client):
+def test_request_locations_datatables(client):
     """This makes the index page"""
-    response = client.get("/locations/upload")
+    response = client.get("/locations_datatables/")
     assert response.status_code == 200
-    assert b"locations/upload" in response.data
-
-
-def test_request_locations_new(client):
-    """This makes the index page"""
-    response = client.get("/locations/new")
-    assert response.status_code == 200
-    assert b"locations/new" in response.data
+    assert b"locations_datatables" in response.data
 
 
 def test_request_locations_map(client):
