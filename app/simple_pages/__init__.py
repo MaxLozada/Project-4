@@ -10,7 +10,7 @@ headers = {
 
 params = {
     'start': '1',
-    'limit': '20',
+    'limit': '10',
     'convert': 'USD'
 }
 
@@ -141,126 +141,6 @@ for x in coins[0:10]:
 
     crypto_10 = crypto_10_num + crypto_10_index + crypto_10_rest
 
-for x in coins[0:11]:
-
-    crypto_11_num = '11',
-
-    crypto_11_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_11_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_11 = crypto_11_num + crypto_11_index + crypto_11_rest
-
-for x in coins[0:12]:
-
-    crypto_12_num = '12',
-
-    crypto_12_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_12_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_12 = crypto_12_num + crypto_12_index + crypto_12_rest
-
-for x in coins[0:13]:
-
-    crypto_13_num = '13',
-
-    crypto_13_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_13_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                     "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                     "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_13 = crypto_13_num + crypto_13_index + crypto_13_rest
-
-for x in coins[0:14]:
-
-    crypto_14_num = '14',
-
-    crypto_14_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 6))
-
-    crypto_14_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 2)), \
-                     "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 2)), \
-                     "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_14 = crypto_14_num + crypto_14_index + crypto_14_rest
-
-for x in coins[0:15]:
-
-    crypto_15_num = '15',
-
-    crypto_15_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_15_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_15 = crypto_15_num + crypto_15_index + crypto_15_rest
-
-for x in coins[0:16]:
-
-    crypto_16_num = '16',
-
-    crypto_16_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_16_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_16 = crypto_16_num + crypto_16_index + crypto_16_rest
-
-for x in coins[0:17]:
-
-    crypto_17_num = '17',
-
-    crypto_17_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_17_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_17 = crypto_17_num + crypto_17_index + crypto_17_rest
-
-for x in coins[0:18]:
-
-    crypto_18_num = '18',
-
-    crypto_18_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_18_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_18 = crypto_18_num + crypto_18_index + crypto_18_rest
-
-for x in coins[0:19]:
-
-    crypto_19_num = '19',
-
-    crypto_19_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_19_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_19 = crypto_19_num + crypto_19_index + crypto_19_rest
-
-for x in coins[0:20]:
-
-    crypto_20_num = '20',
-
-    crypto_20_index = x['name'], x['symbol'], '$' + "{:,}".format(round(x['quote']['USD']['price'], 4))
-
-    crypto_20_rest = "{:,}".format(round(x['quote']['USD']['percent_change_24h'], 4)), \
-                    "{:,}".format(round(x['quote']['USD']['percent_change_7d'], 4)), \
-                    "{:,}".format(round(x['circulating_supply']), 0) + ' ' + x['symbol']
-
-    crypto_20 = crypto_20_num + crypto_20_index + crypto_20_rest
-
 
 simple_pages = Blueprint('simple_pages', __name__,
                          template_folder='templates')
@@ -278,16 +158,6 @@ data = (
     crypto_8,
     crypto_9,
     crypto_10,
-    crypto_11,
-    crypto_12,
-    crypto_13,
-    crypto_14,
-    crypto_15,
-    crypto_16,
-    crypto_17,
-    crypto_18,
-    crypto_19,
-    crypto_20,
 )
 
 headings_index = ("Name", "Symbol", "Price")
