@@ -28,12 +28,12 @@ def test_calculator_add_method():
     """Testing the Calculator"""
     calculator = Calculator()
     assert calculator.add(1) == 1
-    assert calculator.add(2) == 2
+    assert calculator.add(2) == 3
 
 
 def test_calculator_subtract_method():
     """Testing the Calculator Subtract"""
     calculator = Calculator()
     assert calculator.subtract(1) == -1
-    assert calculator.subtract(2) == -2
+    assert calculator.subtract(2) == -3
 
