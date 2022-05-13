@@ -27,7 +27,7 @@ def test_auth_login(client):
     assert response.status_code == 200
 
 
-def test_auth_logout(client):
+def test_auth_profile(client):
     """This makes the index page"""
-    response = client.get("/logout")
+    response = client.get("/profile")
     assert response.status_code == 200
