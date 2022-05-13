@@ -15,7 +15,7 @@ def test_request_locations_upload(client):
     assert b"locations/upload" in response.data
 
 
-def test_request_locations_upload(client):
+def test_request_locations_new(client):
     """This makes the index page"""
     response = client.get("/locations/new")
     assert response.status_code == 200
