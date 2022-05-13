@@ -1,15 +1,6 @@
 """This test the map"""
 
 
-def test_request_locations(client):
-    """This makes the index page"""
-    response = client.get("/")
-    assert response.status_code == 200
-    assert b'href="/locations/map"' in response.data
-    assert b'href="/locations/upload"' in response.data
-    assert b'href="/locations/new"' in response.data
-
-
 def test_request_locations_upload(client):
     """This makes the index page"""
     response = client.get("/locations/upload")
