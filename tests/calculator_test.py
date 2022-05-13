@@ -38,6 +38,6 @@ def test_calculator_subtract_method():
 
 def test_calculator_division_method():
     """Testing the Calculator Division"""
-    calculator = Calculator()
-    assert calculator.division(1) == 1
-    assert Calculator.division(0) == "No Zero allowed in the Denominator!"
+    # pylint: disable=unused-argument,redefined-outer-name
+    assert Calculator.division(2, 2) == 1
+    assert Calculator.division(4, 0) == "No Zero allowed in the Denominator!"
