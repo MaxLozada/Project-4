@@ -51,6 +51,7 @@ def login():
             return redirect(url_for('auth.dashboard'))
     return render_template('login.html', form=form)
 
+
 @auth.route("/logout")
 @login_required
 def logout():
@@ -61,7 +62,6 @@ def logout():
     db.session.commit()
     logout_user()
     return redirect(url_for('auth.login'))
-
 
 
 @auth.route('/dashboard')

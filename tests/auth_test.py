@@ -25,3 +25,9 @@ def test_auth_login(client):
     """This makes the index page"""
     response = client.get("/login")
     assert response.status_code == 200
+
+
+def test_auth_logout(client):
+    """This makes the index page"""
+    response = client.get("/logout")
+    assert response.status_code == 200
