@@ -1,12 +1,20 @@
 """This test the map"""
 
 
-def test_request_locations_upload(client):
+def test_request_locations(client):
     """This makes the index page"""
-    response = client.get("/locations/upload")
+    response = client.get("/")
+    assert response.status_code == 200
+    assert b'href="/locations/map"' in response.data
+    assert b'href="/locations_datatables/"' in response.data
+
+
+def test_request_locations_1(client):
+    """This makes the index page"""
+    response = client.get("/locations_datatables/")
     assert response.status_code == 200
     assert 302 == 200
-    assert b"locations/upload" in response.data
+    assert b"/locations_datatables" in response.data
 
 
 def test_request_locations_map(client):
@@ -15,10 +23,3 @@ def test_request_locations_map(client):
     assert response.status_code == 200
     assert b"locations/map" in response.data
 
-
-def test_request_locations_new(client):
-    """This makes the index page"""
-    response = client.get("/locations/new")
-    assert response.status_code == 200
-    assert 302 == 200
-    assert b"locations/new" in response.data
