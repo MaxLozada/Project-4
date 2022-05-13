@@ -11,7 +11,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ## About Project 
-This project builds upon the previous but adds a Crypto Dashboard that presents the top 5 crypto Home Page and the top 
+This project builds upon the previous but adds a Crypto Dashboard that presents 5 cryptos on the Home Page and the top 
 20 on the Crypto Page. It uses a CoinMarketCap Api and the endpoint updates once every minute. So I'll leave a link on
 the page to the CoinMarketCap home page to show that it works. An admin can edit the map like from the previous projects
 but in this project can edit what cryptos are shown on the Home page.

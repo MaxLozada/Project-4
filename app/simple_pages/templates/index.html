@@ -4,10 +4,10 @@
     <script>
     $(document).ready(function(){
       $(".btn1").click(function(){
-        $("th").hide();
+        $("td").hide();
       });
       $(".btn2").click(function(){
-        $("th").show();
+        $("td").show();
       });
     });
     </script>
@@ -27,9 +27,9 @@
                     <td>{{ cell }}</td>
                     {% endfor %}
                 </tr>
-                <button class="btn1">Hide</button>
-                <button class="btn2">Show</button>
                 {% endfor %}
+                <button id="button1" class="btn1">Hide</button>
+                <button id="button1" class="btn2">Show</button>
 
             </table>
             </body>
@@ -53,6 +53,11 @@
         </div>
     </div>
     <style>
+
+
+#button1 {
+    float: left;
+}
 
 
 #article {
