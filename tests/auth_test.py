@@ -31,3 +31,9 @@ def test_auth_profile(client):
     """This makes the index page"""
     response = client.get("/profile")
     assert response.status_code == 200
+
+
+def test_auth_account(client):
+    """This makes the index page"""
+    response = client.get("/account")
+    assert response.status_code == 200
